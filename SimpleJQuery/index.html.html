@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Demo</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script>
+		$( document ) .ready(function() {
+		
+			$(  "a" ) .click(function( event ) {
+			
+				alert( "Thanks for visiting!"  );
+			
+			});
+			
+			$("button").click(
+				function(){
+					$("h1").hide();
+			});
+			
+			$("#div").hover(
+					
+				function () {
+					$(this).css({"background-color":"red"});
+					$(this).text("click teh toggle button and hover over the green box");
+					},
+					
+				function() {
+					$(this).css({"background-color":"blue"});
+				});
+			
+			
+			$('#div').dblclick(
+				
+				function() {
+					$(this).css({"background-color":"green"});
+				});
+			
+			$('#div').click(
+				
+				function (){
+					$(this).css({"background-color":"purple"});
+				});
+				
+			$("#move").hover(function(){
+				$(this).animate({left: "900px"}, "slow");
+				$(this).animate({fontSize: '2.5em'}, "slow");
+				$(this).text("nice little trick huh?");
+			
+			})
+			
+			$("#toggle").click(function(){
+				$("#toggle1").toggle("slow");
+			})
+		});
+	</script>
+	<script>
+		h2{color:blue; font-size:34px;}
+		#heading{ color: green; font-size:34px}
+		.para{color:red;}
+	</script>	
+	<style type="text/css">
+	
+	body{
+		background-color:#7676EA;
+	}
+	#move{
+		border: 1px solid;
+	}
+	#div {
+		width: 250px;
+		height: 180px;
+		margin: 10px;
+		padding: 20px;
+		background: #00FF00;
+		border: 1px solid black;
+		font-size:16pt;
+		color:#fff;
+		}
+		#toggle1{
+			border: 1px solid;
+			height:400px;
+		}
+		button{
+			margin: 5pt 5pt 0 0 ;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<h1 id="heading">This Is The Largest Heading Tag</h1>
+	
+	<h2>This Is The Second Largest Heading Tag</h2>
+	<h2>This Is Another Tag</h2>
+	<p>This is  paragraph</p>
+	<p>This is another paragraph</p>
+	<a href="https://www.facebook.com">A link to facebook!</a>
+	<br>
+	<button style ="background-color:red;width:130px;height:50px; color :white;">Clicking this will make the heading go away!</button>
+	<p>Move mouse on any square below to see the result: </p>
+	<div id="div"><p>Click and Hover Event</p></div>
+	<div id="move"style="background:green;height:200px;width:200px;"></div>
+	<div id="toggle1"style="background:skyblue;height:200px;width:200px;"></div>
+	
+	<button id="toggle" style ="background-color:red;width:130px;height:35px; color :white;">Toogle</button>
+	</body>
+</html>
