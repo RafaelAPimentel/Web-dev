@@ -1,0 +1,296 @@
+body{
+	background: #ececec url(../images/sos.png) repeat;
+	font-size: 87.5%;
+	font-family: 'Open Sans',sans-serif;
+	color:#666666;
+	line-height: 1.7em;
+	text-align: left;
+}
+
+a{
+	text-decoration: none;
+	color: #781a26;
+
+}
+
+a:hover{
+	color: #666666;
+}
+
+h2{
+	color: #781a26
+}
+
+.cir{
+	clear: both;
+}
+
+#container{
+width:80%;
+margin: 0 auto;
+overflow: auto;
+clear:both;
+}
+
+.main-header img#logo{
+	width:45%;
+	margin: 10px 0;
+	display: block;
+	transition: width 2s;
+}
+
+.main-header .main-nav{
+	background: #882433;
+	height:40px;
+	border-radius: 5px;
+	border: 1px #c13046 solid;
+
+}
+
+.main-header .main-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main-header .main-nav li{
+	color: #ffffff;
+	display: inline;
+	margin-right: 3px;
+}
+.main-header .main-nav li a{
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	height: 20px;
+}
+.main-header .main-nav li a:hover,
+.main-header .main-nav li a.active{
+	background: #efeadd;
+	color: #666666;
+	border-radius: 5px;
+}
+#content{
+	width: 70%;
+	float:left;
+	overflow: auto;
+	transition: width 1s;
+}
+#content article{
+	border-radius: 5px;
+	background: #ffffff;
+	overflow: auto;
+	padding: 10px 15px;
+	margin-top: 10px;
+
+}
+#content article span{
+	font-style: italic;
+	color: #000000;
+}
+#content a.readmore{
+	display: block;
+	float: right;
+	color: #ffffff;
+	padding: 5px 9px;
+	background: #c13046;
+	border-radius: 5px;
+
+}
+#content a.readmore:hover{
+	background: #000000;
+}
+#sidebar{
+	width:30%;
+	float: left;
+	transition: opacity 4s ease-in-out;
+}
+#sidebar .block{
+	border-radius: 5px;
+	background: #ffffff;
+	overflow: auto;
+	padding: 10px 15px;
+	margin: 10px 0 0 10px;
+}
+
+footer{
+	background: #882433;
+	height: 40px;
+	border: 1px solid #c13046;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+footer p{
+color: #fff;
+margin: 0;
+padding: 10px 0 0 0;
+text-align: center;
+}
+
+/*Tablet/ipad portait and landscape*/
+@media only screen and (min-width : 768px) and (max-width: 980px){
+	#container{
+		width: 95%;
+
+	}
+
+	.main-header img#logo{
+		margin: auto;
+		display: block;
+		width: 65%;
+		transition: width 2s;
+
+	}
+	.main-header .main-nav{
+		height: 40px;
+		border-radius: 5px;
+		border: #c13046 1px solid;
+
+	}
+
+	#content{
+		width: 100%;
+		float: none;
+		overflow: auto;
+		transition: width 1s;
+	}
+
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block{
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (min-width: 569px) and (max-width: 767px){
+	#container{
+		width: 95%;
+	}
+	.main-header img#logo{
+		margin: auto;
+		display: block;
+		width: 65%;
+		transition: width 1s;
+	}
+
+	.main-header .main-nav{
+		height:auto;
+		border-radius:5px;
+		border:#c13046 1px solid;
+		display:block;
+		overflow:hidden;
+		width:99%;
+		transition: width 1s; /* animation */
+	}
+	.main-header .main-nav ul{
+		padding: 2% 1%;
+		text-align: center;
+		width: 98%;
+
+	}
+
+	.main-header .main-nav li{
+		float:none;
+		display:block;
+		margin-right:0px;
+		width:100%;
+		border-bottom:solid #a3293b 1px;
+	}
+
+	.main-header .main-nav li a{
+		margin-bottom: 2px;
+		text-align: center;
+
+	}
+	.main-header .main-nav li a:hover,
+	.main-header .main-nav li a.active{
+		display: block;
+	}
+
+	#content{
+		width: 99%;
+		overflow: auto;
+		float: none;
+	}
+
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block{
+		margin-left: 0px;
+	}
+
+}
+
+/*Smart phones*/
+@media only screen and (min-width: 240px) and (max-width: 568px){
+	#container{
+		width: 95%;
+	}
+	.main-header img#logo{
+		margin: auto;
+		display: block;
+		width: 95%;
+		transition: width 1s;
+
+	}
+	.main-header .main-nav{
+		height:auto;
+		border-radius:5px;
+		border:#c13046 1px solid;
+		display:block;
+		overflow:hidden;
+		width:99%
+	}
+	.main-header .main-nav ul{
+		padding: 2% 1%;
+		text-align: center;
+		width: 98%;
+
+	}
+
+	.main-header .main-nav li{
+		float: none;
+		display: block;
+		margin-right: 0;
+		width: 100%;
+		border-bottom: 1px solid #a3293b;
+	}
+
+	.main-header .main-nav li a{
+		margin-bottom: 2px;
+		text-align: center;
+
+	}
+	.main-header .main-nav li a:hover,
+	.main-header .main-nav li a.active{
+		display: block;
+	}
+
+	#content{
+		overflow: auto;
+		width: 100%;
+		float: none;
+	}
+	#content a.readmore{
+		display: block;
+		float: none;
+		border-radius: 5px;
+		text-align: center;
+	}
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block{
+		margin-left: 0px;
+	}
+
+
+}

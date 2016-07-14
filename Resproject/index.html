@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resproject HTML5 Framework</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<!--google font Open Sans-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!--CSS file -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--CDN for JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+	//Toogle for width display
+	var showWidth = 1;
+	//shows width of window 
+	if(showWidth==1){
+		$(document).ready(function(){
+			$(window).resize(function(){
+				var width = $(window).width();
+				document.getElementById('output_width').innerHTML="Window Width: "+width.toString();
+			});
+		});
+	}
+	</script>
+</head>
+<body>
+	<div id="output_width"></div>
+	<div id="container">
+		<header class="main-header">
+			<!--LOGO-->
+			<img id="logo" src="images/logo.png" alt="Resproject"/>
+			<!--NAV BAR-->
+			<nav class="main-nav"> 
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Learn</a></li>
+				<li><a href="#">Brainstorm</a></li>
+				<li><a href="#">Collaborate</a></li>
+				<li><a href="#">Teach</a></li>
+			</ul>
+			</nav>
+		</header>
+		<div id="main">
+			<div id="content">
+				<article class="art1">
+					<header class="art-header">
+						<h2 class="title"><a href="#">First Post</a></h2>
+						<span>Created By: Rafael Pimentel on July 14,2016</span>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu est, lacinia et nisi nec, vehicula pretium magna. Nulla ut nisl vel lorem posuere aliquam a feugiat sapien. Suspendisse tincidunt mauris at consequat ornare. Donec condimentum consequat felis a sodales. Donec vestibulum imperdiet nisl id vulputate.   </p>
+					<p>Aenean in tellus ut nibh dignissim adipiscing nec eget libero. Donec eu diam quam. Sed fermentum elementum ultrices. Aliquam erat volutpat. Integer sollicitudin lacus quis est elementum tincidunt. Praesent mattis, felis a hendrerit tempus, risus orci mollis massa, a porta lorem libero id purus.  </p>
+					<a class="readmore" href="#">Read more</a>
+				</article>
+				<article class="art2">
+					<header class="art-header">
+						<h2 class="title"><a href="#">Second Post</a></h2>
+						<span>Created By: Rafael Pimentel on July 14,2016</span>
+					</header>
+					<p>In in rutrum sapien. Ut tellus nibh, facilisis faucibus pulvinar vitae, sagittis at orci. In sem tellus, faucibus non eros sit amet, tincidunt dictum ligula. Fusce ornare sodales nisi, non aliquet lacus rutrum in. Vestibulum in sem urna. Cras commodo massa enim, non hendrerit lacus pretium vel. </p>
+					<p>Aliquam tristique augue vitae urna aliquet, et volutpat metus gravida. Mauris nec ornare nisl. Sed egestas mi et viverra sollicitudin. Fusce hendrerit adipiscing ipsum, ut suscipit nibh convallis fringilla. Mauris tempus id velit at lacinia. Aenean scelerisque ac sem in accumsan. </p>
+					<a class="readmore" href="#">Read more</a>
+				</article>
+
+			</div>
+			<aside id="sidebar">
+				<div class="block">
+					<h2>Top Sidebar</h2>
+					<p>
+						Donec eu diam quam sed fermentum elementum ultrices aliquam erat volutpat. In gravida nunc a metus sodales egestas. Morbi aliquet metus ultricies cursus elementum. 
+					</p>
+				</div>
+				<div class="block">
+					<h2>Mid Sidebar</h2>
+					<p>
+						Donec eu diam quam sed fermentum elementum ultrices aliquam erat volutpat. In gravida nunc a metus sodales egestas. Morbi aliquet metus ultricies cursus elementum. 
+					</p>
+				</div>
+				<div class="block">
+					<h2>Bottom Sidebar</h2>
+					<p>
+						Donec eu diam quam sed fermentum elementum ultrices aliquam erat volutpat. In gravida nunc a metus sodales egestas. Morbi aliquet metus ultricies cursus elementum. 
+					</p>
+				</div>
+			</aside>
+		</div>
+		<div class="cir"></div>
+		<footer>
+			<p>Copyright &copy; 2016 Resproject</p>
+		</footer>
+
+	</div>
+</body>
+</html>
