@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Clean & Clear</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!---Custome CSS-->
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+</head>
+<body>
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="top-bar"></div>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Clean & Clear"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="innovate.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Innovate <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="innovate.html">Learn</a></li>
+              <li><a href="innovate.html">Create</a></li>
+              <li><a href="innovate.html">Teach</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+         <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <li class="login" data-toggle="modal" data-target="#loginModal"><a href="#">Sign in</a></li>
+        <li class="registar" data-toggle="modal" data-target="#regModal"><a href="#">Registar</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--login modal-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">Login Form</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Registar modal-->
+<div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="regModalLabel">Registar Form</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="ConfirmPassword">
+            </div>
+          </div>          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-md-offset-5">
+        <div class="jumbotron-content">
+          <h1> Clean & Clear HTML5 Template</h1>
+          <p class="lead">Clean & clear is a responsive HTML5 template based on the twitter bootstrap framework.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="bluebox">
+        <h3><span class="glyphicon glyphicon-book"> Learn...</h3>
+        <p>Lorem ipsum dolor sit amet, <a id="tooltip1"href="#" data-toggle="tooltip" title="This is the first tooltip"> consectetuer adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <a class="readmore" href="#"> Read More</a>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="redbox">
+        <h3><span class="glyphicon glyphicon-eye-open"> Create...</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a id="tooltip2" href="#" data-toggle="tooltip" title="Second tooltip"> Aenean commodo ligula eget dolor</a>. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+        <a class="readmore" href="#"> Read More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bluebox">
+        <h3><span class="glyphicon glyphicon-road"> Teach...</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a id="tooltip3" href="#" data-toggle="tooltip" title="Third tooltip">Cum sociis natoque penatibus et magnis dis parturient montes</a>, nascetur ridiculus mus.</p>
+        <a class="readmore" href="#"> Read More</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="row pad-top-30">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading panel-blue-heading" >
+          <h3 class="panel-title">Whats Happening In The World</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle" src="images/small1.jpg" alt="small1">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle"  src="images/small2.jpg" alt="small2">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object img-circle"  src="images/small3.jpg" alt="small3">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Sidebar-->
+    <div class="col-md-4">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          Home
+        </a>
+        <a href="#" class="list-group-item">About</a>
+        <a href="#" class="list-group-item">Innovate</a>
+        <a href="#" class="list-group-item">Blog</a>
+        <a href="#" class="list-group-item">Contact Us</a>
+      </div>
+      <div class="list-group grey-list">
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  Copright &copy; 2016, Clean & Clear
+</footer>
+
+</body>
+</html>
