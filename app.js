@@ -17,8 +17,8 @@ var express       = require("express"),
 
 //setting up database connection
 mongoose.Promise = global.Promise;
-//mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://rafael:Azmnazazmnbn1!@ds031087.mlab.com:31087/yelpcamp");
+mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect("mongodb://rafael:Azmnazazmnbn1!@ds031087.mlab.com:31087/yelpcamp");
 //grabbing data from html forms setup
 app.use(bodyParser.urlencoded({extended: true}));
 //set view to ejs
