@@ -21,3 +21,8 @@
 #delete-form{
     display:inline;
 }
+
+#campgroundForEach {
+    display:flex;
+    flex-wrap: wrap;
+}

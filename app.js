@@ -17,6 +17,7 @@ var express       = require("express"),
 
 //setting up database connection
 mongoose.Promise = global.Promise;
+//mongoose.connect("mongodb://localhost/yelp_camp");
 mongoose.connect(process.env.DATABASEURL);
 //grabbing data from html forms setup
 app.use(bodyParser.urlencoded({extended: true}));
@@ -26,7 +27,9 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 //seeding database
 //seedDB();
+// USING VARIABLE TO USE PUT/DELETE IN FORM METHODS
 app.use(methodOverride("_method"));
+//SETTING EXPRESS TO USE FLASH ON ERRORS 
 app.use(flash());
 //PASSPORT CONFIG 
 //try to keep in order so you dont run into bugs
@@ -35,14 +38,14 @@ app.use(require("express-session")({
     resave: false,
     saveUninitialized: false
 }));
-
+//SETTING UP PASSPORT TO USE 
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-//pass variable to all routes
+//PASS VARIABLES TO ALL ROUTESS
 app.use(function(req,res,next){
     res.locals.currentUser = req.user;
     res.locals.error = req.flash("error");
