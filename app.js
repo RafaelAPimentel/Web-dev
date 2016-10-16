@@ -17,7 +17,7 @@ var express       = require("express"),
 
 //setting up database connection
 mongoose.Promise = global.Promise;
-//mongoose.connect("mongodb://localhost/yelp_camp");
+//export DATABASEURL= "mongodb://localhost/yelp_camp"
 mongoose.connect(process.env.DATABASEURL);
 //grabbing data from html forms setup
 app.use(bodyParser.urlencoded({extended: true}));
