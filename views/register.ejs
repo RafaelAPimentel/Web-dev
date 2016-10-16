@@ -1,15 +1,20 @@
 <% include ./partials/header%>
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <h1>Sign up!</h1>
-            <form action="/register" method="POST">
-                <label for="username">Username</label>
-                <input id="usernamel" class="form-control" type="text" name="username" placeholder="username">
-                <label for="password">Password</label>
-                <input id="password" class="form-control" type="password" name="password" placeholder="password">
-                <input class="btn btn-primary margintop" type="submit"  vale="submit">
-            </form> 
+        <h1 style="text-align: center">Sign Up</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/register" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+                </div>
+            </form>
+            <a href="/campgrounds">Go Back</a>
         </div>
     </div>
 </div>
