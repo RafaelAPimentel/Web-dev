@@ -1,0 +1,10 @@
+[
+        { "id": 1, "completed": false, "itemName": "Milk", "date": "October 1 2014 11:30:01" },
+        { "id": 2, "completed": false, "itemName": "Cookies", "date": "October 1 2014 11:30:02" },
+        { "id": 3, "completed": false, "itemName": "Ice cream", "date": "October 1 2014 11:30:03" },
+        { "id": 4, "completed": false, "itemName": "Potates", "date": "October 1 2014 11:30:04" },
+        { "id": 5, "completed": false, "itemName": "Cereal", "date": "October 1 2014 11:30:05" },
+        { "id": 6, "completed": false, "itemName": "Bread", "date": "October 1 2014 11:30:06" },
+        { "id": 7, "completed": false, "itemName": "Eggs", "date": "October 1 2014 11:30:07" },
+        { "id": 8, "completed": false, "itemName": "Torillas", "date": "October 1 2014 11:30:08" }
+ ]
